@@ -1,0 +1,4 @@
+simply clone the repository
+	git clone git@github.com:Gauge/javascript-snake.git
+	
+then open Snake.html in a web browser
