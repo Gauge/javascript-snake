@@ -1,4 +1,4 @@
-simply clone the repository
-	git clone git@github.com:Gauge/javascript-snake.git
-	
-then open Snake.html in a web browser
+Snake is a simple arcade style game. The goal is to eat as many 
+apples as possible before you die and achieve a high ranking. 
+This version of snake give you the option of battling with up 
+to four friends.
