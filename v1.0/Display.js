@@ -20,7 +20,7 @@
 		Snake.context.fillText("MULTI", Snake.textshow[0]-37.5, 120);
 		Snake.context.fillText("HELP", Snake.textshow[0]-37.5, 150);
 		Snake.context.fillText("press enter to continue", Snake.textshow[0]-125, 210);
-		Snake.context.drawImage(Snake.head1, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25)
+		Snake.context.drawImage(Snake.head1, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25);
 	},
 	
 	displayMultiMenu: function (){
@@ -36,7 +36,7 @@
 		Snake.context.drawImage(Snake.multipx6, Snake.textshow[0], 140)
 		Snake.context.fillText("press enter to continue", Snake.textshow[0]-125, 210);
 		Snake.context.fillText("press escape to go back", Snake.textshow[0]-125, 240);
-		Snake.context.drawImage(Snake.head1, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25)
+		Snake.context.drawImage(Snake.mhead, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25)
 	},
 	
 	displayChooseDiffs: function (snk){
@@ -49,7 +49,7 @@
 		Snake.context.fillText("HARD", Snake.textshow[0]-37.5, 120);
 		Snake.context.fillText("press enter to continue", Snake.textshow[0]-125, 180);
 		Snake.context.fillText("press escape to go back", Snake.textshow[0]-125, 210);
-		Snake.context.drawImage(Snake.head1, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25)
+		Snake.context.drawImage(Snake.mhead, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25)
 	},
 	
 	displayHelp: function (){
@@ -351,6 +351,10 @@
 				Snake.menupo2 -= 30
 				Snake.context.drawImage(Snake.mhead, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25)
 			}
+		}
+		else if (Snake.menuFirst){
+			Snake.context.drawImage(Snake.mhead, Snake.textshow[0]-Snake.menupo, Snake.menupo2, 25, 25)
+			Snake.menuFirst = false;
 		}
 	},
 	

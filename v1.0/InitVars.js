@@ -80,6 +80,18 @@
 		
 		//import images
 		// <this will be changed>
+		Snake.head1 = new Image();
+		Snake.head1.src = "../art/head1.png";
+	
+		Snake.head2 = new Image();
+		Snake.head2.src = "../art/head2.png";
+		
+		Snake.head3 = new Image();
+		Snake.head3.src = "../art/head3.png";
+	
+		Snake.head4 = new Image();
+		Snake.head4.src = "../art/head4.png";
+
 		Snake.aplimg = new Image();
 		Snake.aplimg.src = "../art/RedApple.jpg";
 		
@@ -100,18 +112,6 @@
 		
 		Snake.body2 = new Image();
 		Snake.body2.src = "../art/strate2.png";
-		
-		Snake.head1 = new Image();
-		Snake.head1.src = "../art/head1.png";
-	
-		Snake.head2 = new Image();
-		Snake.head2.src = "../art/head2.png";
-		
-		Snake.head3 = new Image();
-		Snake.head3.src = "../art/head3.png";
-	
-		Snake.head4 = new Image();
-		Snake.head4.src = "../art/head4.png";
 			
 		Snake.turn1 = new Image();
 		Snake.turn1.src = "../art/turn1.png";
@@ -221,6 +221,7 @@
 	
 	setMenuVars: function () {
 		Snake.time = 0;
+		Snake.menuFirst = true;
 		Snake.pchosen = 0;
 		Snake.mchoice = 1;
 		Snake.menupo = 70;

@@ -262,9 +262,9 @@
 	addScore: function (){
 		var ini = prompt("please enter you initals", "");
 		Snake.getScores();
-		if (ini == null || ini == "") {ini = "N/A"; }
+		init = ini || "NaN";
 		Snake.topplayers[Snake.topplayers.length] = ini.slice(0, [3]).toUpperCase();
-		Snake.topscores[Snake.topscores.length] = Snake.score1;
+		Snake.topscores[Snake.topscores.length] = Snake.scores[0];
 		Snake.orderScores();
 		for (var inc=0; inc<10; inc++){
 			if (inc >= Snake.topplayers.length) {localStorage["p"+(inc+1)] = ''; localStorage["s"+(inc+1)] = '';}
